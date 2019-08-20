@@ -1,0 +1,70 @@
+baseurl             = "https://cbrgm.net"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "public"
+theme               = "cocoa"
+author              = "Christian Bargmann"
+title               = "cbrgm.net"
+pygmentsuseclasses  = true
+pluralizelisttitles = false
+
+[permalinks]
+blog  = "blog/:slug/"
+
+# Menu structure
+[[menu.main]]
+name                   = "Blog"
+weight                 = -200
+identifier             = "blog"
+url                    = "/blog/"
+
+[[menu.main]]
+name                   = "Resume"
+weight                 = -190
+identifier             = "resume"
+url                    = "/resume/"
+
+[[menu.main]]
+name                   = "Talks"
+weight                 = -180
+identifier             = "talks"
+url                    = "/talks/"
+
+[[menu.main]]
+name                   = "Imprint"
+weight                 = -100
+identifier             = "imprint"
+url                    = "/imprint/"
+
+[params]
+include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
+latestpostscount       = 10                            # how many posts to display on the home page
+i18n_flags             = false                         # whether to display small country flags for available translations
+author                 = "Christian Bargmann"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
+description            = "Don't panic"
+email                  = "chris@cbrgm.net"
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/leaf.ico"
+github                 = "//github.com/cbrgm"
+lang                   = "en"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = "M.A. student in computer science. Living and working in Hamburg, Germany. Programming addicted. Loves coffee! 🍵❤️⚓"                            # appears in the site header when set to a non-empty string
+twitter                = "//twitter.com/chrisbargmann"
+telegram               = "//t.me/cbrgm"
+
+highlightjs            = true
+highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
+
+piwik                  = false                         # If true, Piwik integration is enabled
+# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
+# piwik_id             = 2                             # Id of your site in Piwik
+
+avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
